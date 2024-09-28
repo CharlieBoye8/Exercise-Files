@@ -16,16 +16,13 @@
     <div id="root"></div>
 
 <script type="text/javascript">
-      let ul = React.createElement(
-        "ul", 
-        {style: {color: "blue"}},
-        React.createElement("li", null, "save"),
-        React.createElement("li", null, "me"),
-        React.createElement("li", null, "JSX"),
-      );
 
       ReactDOM.render(
-        ul,
+        <ul>
+          <li>Robot</li>
+          <li>cowboy</li>
+          <li>moon</li>
+        </ul>,
         document.getElementById("root")
       );
     </script>
