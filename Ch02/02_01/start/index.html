@@ -14,10 +14,18 @@
   </head>
   <body>
     <div id="root"></div>
-    <h1>Getting Started with React</h1>
-    <script type="text/javascript">
+
+<script type="text/javascript">
+      let ul = React.createElement(
+        "ul", 
+        {style: {color: "blue"}},
+        React.createElement("li", null, "save"),
+        React.createElement("li", null, "me"),
+        React.createElement("li", null, "JSX"),
+      );
+
       ReactDOM.render(
-        React.createElement("h1", null, "Getting Started with React"),
+        ul,
         document.getElementById("root")
       );
     </script>
